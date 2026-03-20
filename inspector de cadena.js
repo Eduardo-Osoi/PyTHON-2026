@@ -1,4 +1,4 @@
-// Parte 1: includes()
+
 let fccSentence = "freeCodeCamp is a great place to learn web development.";
 
 console.log("Here are some examples of the includes() method:");
@@ -12,7 +12,7 @@ console.log(`fccSentence.includes("JavaScript") returns ${hasJavaScript} because
 let hasLowercaseFCC = fccSentence.includes("freecodecamp");
 console.log(`fccSentence.includes("freecodecamp") returns ${hasLowercaseFCC} because includes is case-sensitive.`);
 
-// Parte 2: slice()
+
 let message = "Welcome to freeCodeCamp!";
 
 console.log("\nHere are some examples of the slice() method:");
@@ -26,5 +26,5 @@ console.log(`The first word is "${greetingWord}".`);
 let endPunctuation = message.slice(-1);
 console.log(`The ending punctuation mark is a "${endPunctuation}"`);
 
-// Mensaje final
+
 console.log("\nWorkshop complete! You now know how to use includes() and slice().");
