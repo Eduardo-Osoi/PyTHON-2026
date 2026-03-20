@@ -38,5 +38,5 @@ console.log(learningIsFunSentence.indexOf("Learning"));
 console.log(learningIsFunSentence.indexOf("fun"));
 console.log(learningIsFunSentence.indexOf("learning"));
 
-// Mensaje final del taller
+
 console.log("I hope you enjoyed learning today.");
