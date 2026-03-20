@@ -26,6 +26,6 @@ print(year_code)
 initials = employee_code[9:11]
 print(initials)
 
-# Extraer los últimos 3 caracteres usando indexación negativa
+
 last_three = employee_code[-3:]  # Toma desde el antepenúltimo carácter hasta el final
 print(last_three)
