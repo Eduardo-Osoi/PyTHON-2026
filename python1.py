@@ -1,5 +1,5 @@
 def create_character(name, strength, intelligence, charisma):
-    # Validación del nombre
+    
     if not isinstance(name, str):
         return "The character name should be a string"
     
@@ -12,7 +12,7 @@ def create_character(name, strength, intelligence, charisma):
     if " " in name:
         return "The character name should not contain spaces"
     
-    # Validación de las estadísticas
+    
     stats = [strength, intelligence, charisma]
     
     for stat in stats:
@@ -30,11 +30,11 @@ def create_character(name, strength, intelligence, charisma):
     if sum(stats) != 7:
         return "The character should start with 7 points"
     
-    # Construcción de la representación visual de las estadísticas
+    
     def create_stat_display(value):
         return "●" * value + "○" * (10 - value)
     
-    # Crear la cadena de resultado
+    
     result = name + "\n"
     result += "STR " + create_stat_display(strength) + "\n"
     result += "INT " + create_stat_display(intelligence) + "\n"
