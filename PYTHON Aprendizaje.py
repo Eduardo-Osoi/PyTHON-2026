@@ -49,7 +49,7 @@ class Employee:
         if Employee._base_salaries[new_level] < Employee._base_salaries[self._level]:
             raise ValueError("Cannot change to lower level.")
         
-        # Llamar al setter de salary en lugar de modificar _salary directamente
+        
         self.salary = Employee._base_salaries[new_level]
         self._level = new_level
         print(f"'{self._name}' promoted to '{new_level}'.")
@@ -73,11 +73,11 @@ charlie_brown = Employee('Charlie Brown', 'trainee')
 print(charlie_brown)
 print(f"Base salary: ${charlie_brown.salary}")
 
-# Configurando a junior - esto ahora llama al setter de salary automáticamente
+
 charlie_brown.level = "junior"
 print(charlie_brown)
 print(f"New salary: ${charlie_brown.salary}")
 
-# Probando el setter de salary directamente
+
 charlie_brown.salary = 3500
 print(f"Updated salary: ${charlie_brown.salary}")
